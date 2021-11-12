@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    background-image: url("https://i.pinimg.com/564x/27/ca/a9/27caa96b0a90a34348b7fc5a62b50b7c.jpg");   
+    object-fit: contain;
+}
+#main{
+    margin: 4rem 20% 5%;
+}
+header{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+#title{
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+#description{
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+i{
+    font-size: 15px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin-bottom: 1.2rem;
+    margin-right: 0;
+}
+#survey-form{
+    border-radius: 10px;
+    padding: 3rem 3rem 0 3rem;
+    background-color: #ffffff;
+}
+.question{
+    margin-bottom: 10px;
+}
+
+#radio-btn{
+    display: flex;
+    flex-direction: column;
+}
+#radio-btn>label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#radio-btn>label>input{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 10px;
+}
+
+#checkbox{
+    display: flex;
+    flex-direction: column;
+}
+#checkbox>label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#checkbox>label>input{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+button{
+    width: 100%;
+    height: 2.5rem;
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+    font-size: 800;
+    color: rgb(31, 0, 0);
+    background-color: #2bbe64;
+    border: none;
+}
+textarea{
+    resize: vertical;
+    min-height: 8rem;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+.text-input{
+    height: 2rem;
+    font-size: 17px;
+    font-style: italic;
+    padding: 6px 12px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 3px;
+    
+}
+/* responsive */
+@media (max-width: 800px) {
+    #main{
+        margin: 3rem 15% 5%;
+    }
+}
+@media (max-width: 650px) {
+    #main{
+        margin: 3rem 10% 4%;
+    }
+    #title{
+        margin-bottom: 4px;
+        margin-top: 7px;
+        font-size: 2rem;
+    }
+    #description{
+        margin-bottom: 1.5rem;
+    }
+    #survey-form{
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+}
+@media (max-width: 450px) {
+    header{
+        width: 95%;
+    }
+    #main{
+        margin: 2rem 5% 3%;
+    }
+    #survey-form{
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+@media (max-width: 300px) {
+    #main{
+        margin: 1rem 1% 1%;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An My Volleyball Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+    <header>
+        <h1 id="title">An My Volleyball Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label" class="question">Name</label>
+                <input type="text" id="name" class="text-input" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" class="question">Email</label>
+                <input type="email" id="email" class="text-input" placeholder="Enter your email" required></div>
+            <div class="form-group">
+                <label for="number" id="number-label" class="question">Grade <i>(optional)</i></label>
+                <input type="number" id="number" class="text-input" min="10" max="12" placeholder="Enter your grade" required>
+            </div>
+            <div class="form-group">
+                <label for="dropbox" class="question">Which option best describes your volleyball skill?</label>
+                <select name="skill" id="dropdown" class="text-input" required>
+                    <option value="default" selected disabled>Select your level skill</option>
+                    <option value="Skillful">Skillful</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Weak">Weak(newbie)</option>
+                </select>
+            </div>
+            <div class="form-group">      
+                <label class="question">Do you want become a professional player in the future?</label>
+                <div class="answer" id="radio-btn">
+                    <label for="yes">
+                        <input type="radio" name="passion" id="yes" value="yes">
+                    Yes</label>
+
+                    <label for="no">
+                        <input type="radio" name="passion" id="no" value="no">
+                    No</label>
+
+                    <label for="not-sure">
+                        <input type="radio" name="passion" id="not-sure" value="not-sure">
+                    I don't know</label>
+                </div>             
+            </div>
+            <div class="form-group">
+                <label class="question"><p>What postion you want to apply after joining in An My volleyball team?
+                    <i>(you can select any postions)</i>
+                </p>
+                </label>
+                <div class="answer" id="checkbox">
+                    <label>
+                        <input name="postion" value="setter" type="checkbox"/>
+                        Setter
+                    </label>
+        
+                    <label >
+                        <input name="postion" value="out-hitter" type="checkbox"/>
+                        Outside Hitter
+                    </label>
+                    
+                    <label>
+                        <input name="postion" value="oppo-hitter" type="checkbox"/>
+                        Opposite Hitter
+                    </label>
+                    
+                    <label>
+                        <input name="postion" value="mid-blocker" type="checkbox"/>
+                        Middle Blocker
+                    </label>
+                    
+                    <label> 
+                        <input name="postion" id="libero" type="checkbox"/>
+                        Libero
+                    </label>
+                </div>        
+            </div>
+            <div class="form-group">
+                <label for="textarea" class="question">
+                    Any comments or suggestions?
+                </label>
+                <textarea id="textarea"  placeholder="Enter your comment here..."></textarea>
+            </div>
+         <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>  
+</body>
+</html>

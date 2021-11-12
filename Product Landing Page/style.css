@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 254, 254);
+}
+header{
+    margin: 0;
+    padding: 0 3%;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(-105deg,#659ebc, #242582);
+    display: flex;
+    justify-content: center;
+    height: 4.5rem;
+}
+#logo-img{
+    width: 60%;
+    text-align: left;
+}
+#header-img{
+    height: 100%;
+    width: 50%; 
+    object-fit: contain;
+}
+
+#nav-bar{
+    width: 40%;
+}
+#nav-bar>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+}
+#head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#title{
+    margin-bottom: 1rem;
+}
+#email{
+    margin: 0 auto 1rem;
+    width: 70%;
+    height: 1.7rem;
+    border-radius: 2px;
+}
+#submit{
+    margin: 0 auto 0;
+    width: 40%;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #659ebc;
+}
+#features{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    margin: 4rem 0 0;
+} 
+#container{
+    margin: 0 5%;
+}
+.fea-element{
+    display: flex;
+    height: 33%;
+    padding: 0 10%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}   
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.description>p{
+    margin-top: 0.4rem;
+    line-height: 1.2;
+    text-align: left;
+}
+.description>h2{
+    text-align: left;
+}
+img{
+    width: 70%;
+    height: 50%;
+}
+#how-it-work{
+    margin: 0 auto 5rem;
+    width: 40vw;
+    height: 45vh;
+    padding-top: 5rem;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+#price-area{
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: space-evenly;
+    width: 100%; 
+}
+.table-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 3px;
+}
+.name-product{
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(100deg,#659ebc, #242582);
+}
+.price{
+    padding: 0.5rem 0 1rem;
+}
+.table-price>ul{
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    padding: 0;
+}
+.select-btn{
+    margin: 0 auto 0.7rem;
+
+}
+.select-btn>button:hover{
+    background-color: #659ebc;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.select-btn>button{
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: linear-gradient(-105deg,#659ebc, #242582);
+}
+footer>ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 1rem 1.6rem 0 1.6rem;
+}
+footer>ul>li{
+    margin: 0 0.6rem;
+}
+footer>span{
+    margin-right: 1.6rem;
+    margin-bottom: 1rem;
+}
+/* 
+responsive */
+@media (max-width: 800px) {
+    form{
+        width: 50%;
+    }
+    .fea-element{
+        padding: 0 5%;
+    }
+    #how-it-work{
+        margin: 0 auto 3rem;
+        width: 55vw;
+        height: 45vh;
+    }
+}
+@media (max-width: 680px) {
+    #price-area{
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .table-price{
+        margin-bottom: 1rem;
+    }
+    #how-it-work{
+        width: 70vw;
+        height: 45vh;
+    }
+    .fea-element{
+        padding: 0;
+    }
+    .name-product{
+        padding: 1rem 0;
+        min-width: 100%;
+    }
+    #features{
+        margin-top: 2rem;
+    }
+    form{
+        width: 70%;
+    }
+}
+@media (max-width: 480px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        height: 16vh;
+        padding: 0;
+    }
+    #logo-img{
+        text-align: center;
+        padding-top: 20px;
+    }
+    #nav-bar{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    
+}
